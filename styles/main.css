@@ -1,0 +1,115 @@
+/* CSS custom property */
+:root {
+    --accent-color: #800000;
+}
+
+/* Reset margins and padding; use the border-box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default styles */
+body {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid var(--accent-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+a:hover,
+a:focus {
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: 105%;
+}
+
+/* Default vertical spacing */
+h1, h2, h3, p, ul {
+    padding: 0.5em 0;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+/* Header styles */
+header {
+    border-bottom: 2px solid var(--accent-color);
+    background: linear-gradient(30deg, #f6bb73 0%, #ffffff 30%, #ffffff 65%, #f6bb73 100%);
+}
+
+header h2 {
+    font-size: 175%;
+    padding-bottom: 0;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    padding-bottom: 1em;
+}
+
+header img {
+    float: left;
+    margin: 0.75em 1em;
+}
+
+/* Main content styles */
+main {
+    clear: left;
+    padding: 0 1em 1em;
+}
+
+main h1 {
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* Bonus: rounded box around the guest-speaker heading */
+main h1.guest-heading {
+    border: 2px solid var(--accent-color);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 0 2em;
+}
+
+main img {
+    border: 4px double var(--accent-color);
+    border-radius: 0.5em;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--accent-color);
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* CSS class from Chapter 4 */
+.large {
+    font-size: 125%;
+}
